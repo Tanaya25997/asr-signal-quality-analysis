@@ -1,0 +1,9 @@
+data/
+*.wav
+*.flac
+*.mp3
+__pycache__/
+*.pyc
+venv/
+.env
+results/*.png

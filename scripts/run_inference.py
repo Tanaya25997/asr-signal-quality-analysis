@@ -27,7 +27,7 @@ print("Loading CommonVoice samples...")
 start = time.time() 
 
 dataset = load_dataset(
-    "mozilla-foundation/common_voice_11_0",
+    "echodict/common_voice_11_0",
     "en",
     split="test",
     cache_dir=DATA_CACHE,

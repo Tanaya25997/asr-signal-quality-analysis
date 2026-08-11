@@ -27,10 +27,11 @@ print("Loading CommonVoice samples...")
 start = time.time() 
 
 dataset = load_dataset(
-    "echodict/common_voice_11_0",
+    "mozilla-foundation/common_voice_11_0",
     "en",
     split="test",
     cache_dir=DATA_CACHE,
+    revision="refs/convert/parquet"
     #trust_remote_code=True
 )
 

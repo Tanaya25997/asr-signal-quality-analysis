@@ -27,11 +27,11 @@ print("Loading CommonVoice samples...")
 start = time.time() 
 
 dataset = load_dataset(
-    "echodict/common_voice_11_0",
+    "fsicoli/common_voice_11_0",
     "en",
     split="test",
     cache_dir=DATA_CACHE,
-    trust_remote_code=True
+    #trust_remote_code=True
 )
 
 dataset = dataset.shuffle(seed=42).select(range(NUM_SAMPLES))
